@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import kf.ylc.ifm_lib.InterfaceManager;
-
 public class TestActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText et_message;
     private Button btn_add;
