@@ -1,6 +1,6 @@
 # InterfaceManager
 接口管理工具类，用于类和类之间的通信
-##使用说明：
+## 使用说明：
 工程build.gradle中添加：
 ~~~
 allprojects {
@@ -17,7 +17,7 @@ dependencies {
     implementation 'com.github.ylcGithub:InterfaceManager:1.0.0'
 }
 ~~~
-##使用范例1，先注册后调用：
+## 使用范例1，先注册后调用：
 注册接口：
 ~~~
 InterfaceManager.getInstance().addInterface("test_key", new CustomInterfaceHasParamAndResult<String,String>() {
@@ -29,7 +29,7 @@ InterfaceManager.getInstance().addInterface("test_key", new CustomInterfaceHasPa
  ~~~~
  调用接口：
  String result = InterfaceManager.getInstance().invokeInterface("test_key","这是调用参数",String.class);
- ##使用范例2，先调用后注册：
+ ## 使用范例2，先调用后注册：
  调用接口：
  ~~~
   InterfaceManager.getInstance().invokeInterface("test_key", "这是调用参数", String.class, new CustomResultInterface<String>() {
