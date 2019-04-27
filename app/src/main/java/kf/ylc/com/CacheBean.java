@@ -4,21 +4,21 @@ package kf.ylc.com;
  * Created By dyzn-ylc on 2019/4/12
  */
 public class CacheBean {
-    private CustomResultInterface resultInterface;
+    private CusRIF resultInterface;
     private Object object;
     private Class aClass;
 
-    public CacheBean(CustomResultInterface resultInterface, Object object, Class aClass) {
+    public CacheBean(CusRIF resultInterface, Object object, Class aClass) {
         this.resultInterface = resultInterface;
         this.object = object;
         this.aClass = aClass;
     }
 
-    public CustomResultInterface getResultInterface() {
+    public CusRIF getResultInterface() {
         return resultInterface;
     }
 
-    public void setResultInterface(CustomResultInterface resultInterface) {
+    public void setResultInterface(CusRIF resultInterface) {
         this.resultInterface = resultInterface;
     }
 
