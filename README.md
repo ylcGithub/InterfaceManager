@@ -14,7 +14,7 @@ app module中的build.gradle中添加：
 ~~~
 dependencies {
     ...
-    implementation 'com.github.ylcGithub:InterfaceManager:1.0.0'
+    implementation 'com.github.ylcGithub:InterfaceManager:1.1.0'
 }
 ~~~
 ## 使用范例1，先注册后调用：
